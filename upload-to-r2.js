@@ -13,11 +13,6 @@ const FILE_PATH = path.resolve("hls_output.zip"); // or full path to your zip
 const FILE_KEY = "hls_output.zip"; // how it'll appear in R2
 
 
-console.log(ACCOUNT_ID)
-console.log(ACCESS_KEY_ID)
-console.log(SECRET_ACCESS_KEY)
-
-
 const s3 = new S3Client({
   region: "auto", // R2 ignores region but field is required
   endpoint: `https://${ACCOUNT_ID}.r2.cloudflarestorage.com`,
